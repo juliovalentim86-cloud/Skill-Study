@@ -1,23 +1,72 @@
+body{
+  margin: 0;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: #f0f0f0;
+    padding: 0rem 1.75rem;
+    background-color: #c7fbeb;
+    position: relative;
+}
+.marca{
+  display: flex;
+  align-items: center;
+  gap: 0%;
+}
+.logo{
+  width: 12%;
+  flex-shrink: 0;
+}
+.identidade {
+  font-family: Lexend Peta;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  margin-top: 0;
 }
 
+.skill-study{
+  font-size: 170%;
+  color: #062222;
+  margin: 0;
+}
 
-header img.logo {
-    height: 40px;
+.texto{
+  font-size: 95%;
+  font-weight:400;
+  color: #124b4b;
+  margin: 0;
+}
+
+header img.imagem {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 
 header nav {
+    font-family: DM Sans;
+    font-weight:800;
+    font-color: #062222;
     display: flex;
     align-items: center;
-    gap: 2rem;
 }
 
+.opcoes {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
 header nav ul {
     list-style: none;
     display: flex;
@@ -26,17 +75,23 @@ header nav ul {
     padding: 0;
 }
 
-header nav ul li a {
+header li a {
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    transition: color 0.3s ease;
+    color: #062222;
+    font-weight: 800;
+}
+
+header li a:hover {
+  color: #00a884;
 }
 
 
 .foto-perfil {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .foto-perfil img {
