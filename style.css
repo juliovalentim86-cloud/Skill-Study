@@ -102,3 +102,6 @@ form {
     flex-direction: column;
     align-items: center;
 }
+form button[hidden] {
+    display: none !important;
+}
