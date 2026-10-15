@@ -1,92 +1,126 @@
+
 <!DOCTYPE html>
-<html lang="Pt-BR">
+<html lang="pt-BR">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend+Peta:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend+Peta:wght@100..900&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skill Study</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skill Study</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend+Peta:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-      <div class = "marca">
-        <div class = "logo">
-            <img class="imagem" src="img/logo.png" alt="Logo do Skill Study">
-        </div>
-        <div class = "identidade">
-        <h1 class = "skill-study">SKILL STUDY</h1>
-  
-        <h2 class = "texto">Aprenda do seu jeito</h2>
-        </div>
-      </div>
-        <nav>
-            <ul class = opcoes>
-              <li><a href="#">APRENDA</a></li>
-              <li><a href="#">COMPARTILHE</a></li>
-              <li><a href="#">AULAS</a></li>
-            </ul>
-            <div class="foto-perfil">
-                <a href = "#"><img class = "foto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuKiVrFgaCktxXF0QFKHAD9ZwirmPjLN5jaE5c4hZkHg&s=10" alt="Foto de Perfil">
-                  
-                <ul>
-                   <li>
-                     <a href ="#">Aluno/Monitor</a>
-                   </li> 
-                </ul>
-            </div>
-    </nav>
-</header>
-  <aprenda>
-<section class = secao-principal>
-  <h1>APRENDA DO SEU JEITO</h1>
-  <h3>Descubra habilidades, compartilhe o que você sabe e encontre pessoas para aprender junto.</h3>
-    <nav class= "navegacao">
-        <h3>Como você quer aprender hoje?</h3>
-        <form id="estudo">
-            <input id="pesquisa" type="search" placeholder="Ex.: matemática, leitura... ">
-        </form>
-    </nav>
-</section>
-<section class="formas-de-aprendizado">
-  <div class="cards-aprendizado">
-    <a href="#">
-        <img class="img-leitura" src="https://editoralabrador.com.br/wp-content/uploads/2025/10/pessoas-de-tiro-medio-lendo-juntas.jpg.webp" alt="">
-        Leitura</a>
-    <a href="#">
-        <img class="img-musica" src="https://www.sustenidos.org.br/wp-content/uploads/2026/03/unnamed-39-1024x768.jpg" alt="">
-        Música</a>
-    <a href="#">
-        <img class="img-filmes-series" src="https://s3.amazonaws.com/chico-rei-blogs/content/images/2021/10/capa-cinema-em-casa.jpg" alt="">
-        Filmes e séries</a>
-    <a href="#">
-        <img class="img-jogos" src="https://files.meiobit.com/wp-content/uploads/2020/04/20200407jogos-em-promocao.jpg" alt="">
-        Jogos</a>
-    <a href="#">
-        <img class="img-idiomas" src="https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2025/04/lingua.png" alt="">
-        Idiomas</a>
-    <a href="#">
-        <img class="img-desenhos" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKoyTLNJ7JT1U2s7ud0Y0Wa__PMNKWxwDQlSowFS2WpA&s=10" alt="">
-        Desenhos</a>
-  </div>
-</section>
-  </aprenda>
 
-<div class="Compartilhe">
-    <h3>Compartilhe o que você sabe</h3>
-</div>
-<button id="acesso">Ajude outros alunos aqui</button>
-<div class="aulas">
+  <header>
+    <div class="marca">
+      <div class="logo">
+        <img class="imagem" src="img/logo.png" alt="Logo do Skill Study">
+      </div>
+
+      <div class="identidade">
+        <h1 class="skill-study">SKILL STUDY</h1>
+        <h2 class="texto">Aprenda do seu jeito</h2>
+      </div>
+    </div>
+
+    <nav>
+      <ul class="opcoes">
+        <li><a href="#aprenda">APRENDA</a></li>
+        <li><a href="#compartilhe">COMPARTILHE</a></li>
+        <li><a href="#aulas">AULAS</a></li>
+      </ul>
+
+      <div class="foto-perfil">
+        <a href="#">
+          <img class="foto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuKiVrFgaCktxXF0QFKHAD9ZwirmPjLN5jaE5c4hZkHg&s=10" alt="Foto de perfil">
+        </a>
+
+        <ul>
+          <li><a href="#">Aluno/Monitor</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="aprenda" id="aprenda">
+    <section class="secao-principal">
+      <h1>APRENDA DO SEU JEITO</h1>
+
+      <h3>Descubra habilidades, compartilhe o que você sabe e encontre pessoas para aprender junto.</h3>
+
+      <nav class="navegacao">
+        <h3>Como você quer aprender hoje?</h3>
+
+        <form id="estudo">
+          <input id="pesquisa" type="search" placeholder="Ex.: matemática, leitura...">
+        </form>
+      </nav>
+    </section>
+
+    <section class="formas-de-aprendizado">
+      <div class="cards-aprendizado">
+        <a href="#">
+          <img class="img-leitura" src="https://editoralabrador.com.br/wp-content/uploads/2025/10/pessoas-de-tiro-medio-lendo-juntas.jpg.webp" alt="">
+          Leitura
+        </a>
+
+        <a href="#">
+          <img class="img-musica" src="https://www.sustenidos.org.br/wp-content/uploads/2026/03/unnamed-39-1024x768.jpg" alt="">
+          Música
+        </a>
+
+        <a href="#">
+          <img class="img-filmes-series" src="https://s3.amazonaws.com/chico-rei-blogs/content/images/2021/10/capa-cinema-em-casa.jpg" alt="">
+          Filmes e séries
+        </a>
+
+        <a href="#">
+          <img class="img-jogos" src="https://files.meiobit.com/wp-content/uploads/2020/04/20200407jogos-em-promocao.jpg" alt="">
+          Jogos
+        </a>
+
+        <a href="#">
+          <img class="img-idiomas" src="https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2025/04/lingua.png" alt="">
+          Idiomas
+        </a>
+
+        <a href="#">
+          <img class="img-desenhos" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKoyTLNJ7JT1U2s7ud0Y0Wa__PMNKWxwDQlSowFS2WpA&s=10" alt="">
+          Desenhos
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <section class="Compartilhe" id="compartilhe">
+    <h2>Compartilhe o que você sabe</h2>
+
+    <button id="acesso" type="button">
+      <h3>Ajude outros alunos aqui</h3>
+    </button>
+  </section>
+
+  <section class="aulas" id="aulas">
     <h2>Aulas recomendadas</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/dSvQnPtKiVg?si=vmEwPbML5F5JXRTu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-    <script src="script.js"></script>
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/dSvQnPtKiVg"
+      title="Aula recomendada do YouTube"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
