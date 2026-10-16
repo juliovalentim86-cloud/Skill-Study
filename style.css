@@ -294,16 +294,26 @@ form {
   align-items: center;
 }
 
+
 .Compartilhe h2 {
-  margin: 4rem 100px 0;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+
+  margin: 4rem 0 0;
+  padding: 0 5%;
+
   font-family: "DM Sans", sans-serif;
-  font-size: 370%;
+  font-size: clamp(2rem, 5vw, 3.7rem);
   font-weight: 800;
-  letter-spacing: -0.07em;
+  letter-spacing: -0.04em;
+  overflow-wrap: break-word;
+
   background: linear-gradient(135deg, #ffffff 0%, #48cae4 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
   text-align: center;
 }
 
