@@ -284,6 +284,7 @@ form {
 .Compartilhe {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
   background: #051f26;
   background: linear-gradient(
     270deg,
