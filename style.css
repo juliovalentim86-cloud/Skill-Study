@@ -96,17 +96,15 @@ header nav a:hover {
   color: #00a884;
 }
 
-.foto-perfil img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
+.foto {
+  font-size: 32px
 }
 
 .foto-perfil {
   display: flex;
   align-items: center;
-  gap: 0.2rem;
+  justify-content: center;
+  gap: 0.3rem;
   padding: 0.5rem 1rem;
   background-color: #d9f8ef;
   border-radius: 999px;
@@ -134,6 +132,7 @@ header nav a:hover {
     rgba(171, 255, 245, 1) 96%
   );
   border-bottom: 1vh solid #06140f;
+  margin-top: -4rem;
 }
 
 .secao-principal {
