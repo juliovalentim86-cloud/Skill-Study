@@ -1,4 +1,8 @@
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -97,7 +101,7 @@ header nav a:hover {
 }
 
 .foto {
-  font-size: 32px
+  font-size: 32px;
 }
 
 .foto-perfil {
@@ -120,7 +124,6 @@ header nav a:hover {
 }
 
 .aprenda {
-  background: #defff7;
   background: linear-gradient(
     180deg,
     rgba(222, 255, 247, 1) 2%,
@@ -179,39 +182,70 @@ header nav a:hover {
   margin-bottom: 0;
 }
 
+/* FORMULÁRIO DE PESQUISA */
 #estudo {
-  width: 100%;
-}
-
-#pesquisa {
+  position: relative;
   display: block;
-  width: 500px;
-  max-width: 100%;
-  height: 45px;
-  padding: 0 15px;
+  width: min(450px, 100%);
+  height: 40px;
+  margin: 1rem auto -20px;
+  padding: 0;
   box-sizing: border-box;
-  border-radius: 999px;
-  font-family: "Montserrat", sans-serif;
-  border: 2px solid #246b61;
-  outline: none;
 }
 
-#pesquisa::placeholder {
+/* CAMPO DE TEXTO */
+#estudo #pesquisa {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin: 0;
+  padding: 0 42px 0 15px;
+  box-sizing: border-box;
+
+  border: 1px solid #246b61;
+  border-radius: 999px;
+  outline: none;
+  background-color: #fff;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+#estudo #pesquisa::placeholder {
   text-shadow: 0.5px 0.5px 1px #06383840;
   font-style: italic;
+  color: #777;
 }
 
-#pesquisa:focus {
+#estudo #pesquisa:focus {
   border-color: #063838;
   box-shadow: 0 0 0 3px #06383820;
 }
 
-form {
+/* REMOVE O BOTÃO PADRÃO DO CAMPO SEARCH */
+#estudo #pesquisa::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/* LUPA DENTRO DA CAIXA */
+#estudo > .fa-magnifying-glass {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  width: 18px;
+  height: 40px;
+
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-top: 1rem;
-  margin-bottom: -20px;
+  justify-content: center;
+
+  font-size: 15px;
+  line-height: 1;
+  color: #246b61;
+
+  pointer-events: none;
 }
 
 .cards-aprendizado {
@@ -230,18 +264,15 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   width: 100%;
   height: auto;
   aspect-ratio: 1 / 1;
   box-sizing: border-box;
-
   margin: 0;
   padding: 0.75rem;
   background-color: #243d42;
   border: 1px solid #b2ead9;
   border-radius: 2rem;
-
   text-decoration: none;
   font-family: "DM Sans", sans-serif;
   font-size: 130%;
@@ -249,7 +280,6 @@ form {
   letter-spacing: 0.02em;
   color: #d9fceb;
   gap: 0.7rem;
-
   overflow: hidden;
   box-shadow: 0 10px 25px rgba(6, 56, 56, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -268,52 +298,33 @@ form {
   border-radius: 1.5rem;
 }
 
-@media (max-width: 800px) {
-  .cards-aprendizado {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 500px) {
-  .cards-aprendizado {
-    grid-template-columns: 1fr;
-  }
-}
-
 .Compartilhe {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background: #051f26;
+  align-items: center;
   background: linear-gradient(
     270deg,
     rgba(5, 31, 38, 1) 1%,
     rgba(3, 31, 48, 1) 50%,
     rgba(2, 18, 23, 1) 100%
   );
-  align-items: center;
 }
-
 
 .Compartilhe h2 {
   width: 100%;
   max-width: 100%;
-  box-sizing: border-box;
-
   margin: 4rem 0 0;
   padding: 0 5%;
-
   font-family: "DM Sans", sans-serif;
   font-size: clamp(2rem, 5vw, 3.7rem);
   font-weight: 800;
   letter-spacing: -0.04em;
   overflow-wrap: break-word;
-
   background: linear-gradient(135deg, #ffffff 0%, #48cae4 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
   text-align: center;
 }
 
@@ -321,13 +332,10 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
-
   width: 34%;
   max-width: 400px;
   min-width: 220px;
   height: 12vh;
-
   padding: 1rem;
   border: none;
   border-radius: 99px;
@@ -347,20 +355,6 @@ form {
   text-shadow: 0.04em 0.04em 0.1em #788b8a;
   letter-spacing: -0.02em;
 }
-
-.aulas {
-  text-align: center;
-  background-color: #d5fcf9;
-}
-
-.aulas h2{
-  margin-top: 3rem;
-  font-weight: 500;
-  font-size: 160%;
-  color: #091314;
-  text-shadow: 0.04em 0.04em 0.1em #788b8a;
-}
-
 
 .aulas {
   padding: 3rem 5%;
@@ -419,13 +413,38 @@ form {
 }
 
 @media (max-width: 800px) {
+  .cards-aprendizado {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .grid-aulas {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .secao-principal > h1 {
+    font-size: clamp(2rem, 7vw, 4.5rem);
+  }
+
+  .navegacao h3 {
+    font-size: clamp(1.4rem, 4vw, 2.35rem);
   }
 }
 
 @media (max-width: 500px) {
+  .cards-aprendizado,
   .grid-aulas {
     grid-template-columns: 1fr;
+  }
+
+  .secao-principal {
+    padding: 3rem 1rem;
+  }
+
+  .campo-pesquisa {
+    width: 100%;
+  }
+
+  header {
+    padding: 0 0.75rem;
   }
 }
